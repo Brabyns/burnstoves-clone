@@ -35,7 +35,11 @@
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  .hero{
+    height: 50vh;
+  }
   .hero-overlay {
     
     justify-content: center;
@@ -52,6 +56,10 @@
 }
 
 @media (max-width: 480px) {
+
+  .hero{
+    height: 50vh;
+  }
   .hero-overlay p {
     font-size: 1rem;
     

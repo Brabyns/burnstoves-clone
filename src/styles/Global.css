@@ -78,6 +78,10 @@
   }
   
   @media (max-width: 600px) {
+
+    .section-title{
+      font-size: 1.5rem;;
+    }
     .impact-cards {
       flex-direction: column;
       align-items: center; 
