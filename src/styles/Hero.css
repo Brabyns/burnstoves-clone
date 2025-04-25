@@ -1,0 +1,58 @@
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.4); /* semi-dark overlay */
+}
+
+.hero-overlay p {
+  font-size: 2rem;
+  max-width: 600px;
+  line-height: 1.2;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-overlay p {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-overlay p {
+    font-size: 1rem;
+    padding: 1rem 0;
+  }
+}

@@ -1,0 +1,101 @@
+.development-section {
+  width: 100%;
+  color: white;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000; /* fallback for image */
+  background-image: url('/Burn-1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.text-block {
+  max-width: 600px;
+}
+
+.text-block h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem; 
+}
+
+.text-block ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.orange-btn,
+.dark-btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.orange-btn {
+  background-color: #f88a1b;
+  color: #000;
+}
+
+.dark-btn {
+  background-color: #888888;
+  color: white;
+  /* border: 2px solid white; */
+}
+
+.image-block {
+  display: none; /* hidden on desktop, shown on mobile */
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+    background-image: none;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+  }
+
+  .text-block h1 {
+    font-size: 1.5rem;
+  }
+
+  .image-block {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-image: url('/Burn-1.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .orange-btn,
+  .dark-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+}

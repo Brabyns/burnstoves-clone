@@ -1,0 +1,23 @@
+/* src/styles/CarbonProjectMapOnly.css */
+
+.carbon-map-container {
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+    text-align: center;
+    
+  }
+  
+
+  
+  .carbon-map-full {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 16px;
+    padding: 0.5rem;
+    background: #f8f9fa; /* light gray to match Burnstoves aesthetic */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+  }
+  
+
+  

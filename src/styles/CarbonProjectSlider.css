@@ -1,0 +1,80 @@
+/* src/components/CarbonProjectSlider.css */
+.carbon-slider-container {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+  
+  .carbon-slider-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .carbon-slider {
+    margin-bottom: 2rem;
+  }
+  
+  .carbon-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carbon-slide-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  
+  .carbon-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  .carbon-map{
+    display: inline-block;
+  }
+
+  .carbon-map, .carbon-photo {
+    flex: 1 1 500px;
+    max-width: 50%;
+  }
+  
+  
+  .carbon-slider-btn {
+    padding: 0.8rem 2rem;
+    border: 2px solid #ff6600;
+    background-color: transparent;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #ff6600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .carbon-slider-btn:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .carbon-photo, .carbon-map {
+      max-width: 100%;
+    }
+  
+    .carbon-slider-title {
+      font-size: 1.5rem;
+    }
+  
+    .carbon-slider-btn {
+      font-size: 0.9rem;
+    }
+  }
+  

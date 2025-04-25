@@ -1,0 +1,147 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0 30px;
+  color: #888888;
+  width: 70%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #f88a1b;
+}
+
+.purchase-button {
+  padding: 7px 30px;
+  background-color: #f88a1b;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.nav-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: transparent;
+  color: #f88a1b;
+  cursor: pointer;
+  border: none;
+}
+
+/* Mobile styles */
+@media (max-width: 1024px) {
+  .nav-btn {
+    display: inline-block;
+  }
+
+  .navbar {
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    grid-gap: 0;
+    width: 16rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+  }
+
+  .nav-links li {
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    box-shadow: -2rem 3rem 7rem rgba(0, 0, 0, 0.7);
+    border-top: 1px solid #ae5c11;
+    animation: animateDropdown 400ms ease forwards;
+    opacity: 0;
+    transform-origin: top;
+    color: #fff;
+    background: #f88a1b;
+    padding: 0 2rem;
+  }
+  
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li:nth-child(2) { animation-delay: 200ms; }
+  .nav-links li:nth-child(3) { animation-delay: 400ms; }
+  .nav-links li:nth-child(4) { animation-delay: 600ms; }
+  .nav-links li:nth-child(5) { animation-delay: 800ms; }
+  .nav-links li:nth-child(6) { animation-delay: 1000ms; }
+  .nav-links li:nth-child(7) { animation-delay: 1200ms; }
+
+  @keyframes animateDropdown {
+    0% {
+      transform: rotateX(90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+
+  .purchase-button {
+    display: none;
+  }
+
+   #open__nav-btn {
+    display: inline-block;
+  }
+
+   #close__nav-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .nav-btn {
+    margin-left: auto;
+  }
+}
+
+/* Hide nav buttons on desktop */
+@media screen and (min-width: 1025px) {
+  .nav-btn {
+    display: none !important;
+  }
+}
