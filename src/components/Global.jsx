@@ -48,11 +48,13 @@ const Global = () => {
             <div className="impact-label">{item.label}</div>
           </div>
         ))}
+
+        
       </div>
       
       <button className="btn btn-primary">Learn More</button>
     </div>
-  );
+  ); 
 };
 
 export default Global;
