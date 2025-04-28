@@ -70,7 +70,7 @@
     flex-direction: column-reverse;
     background-image: none;
     background-color: white;
-    color: black;
+    color: #888888;
     padding: 1rem;
   }
 
@@ -85,7 +85,7 @@
     background-image: url('/Burn-1.png');
     background-size: cover;
     background-position: center;
-    border-radius: 1rem;
+    border-radius: 5px;
     margin-bottom: 1rem;
   }
 

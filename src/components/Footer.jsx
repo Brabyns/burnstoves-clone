@@ -30,7 +30,7 @@ const Footer = () => {
         <div className="footer-nav-col">
           <h3>Products</h3>
           <ul>
-            <li><a href="#">Electric Stoves</a></li>
+           <li><a href="#">Electric Stoves</a></li>
             <li><a href="#">Wood Stoves</a></li>
             <li><a href="#">Institutional Stoves</a></li>
             <li><a href="#">Cookware & Grill</a></li>

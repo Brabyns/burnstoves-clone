@@ -13,8 +13,10 @@ const Development = () => {
             <li>MMECD</li>
           </ul>
           <div className="buttons">
-            <button className="orange-btn">Carbon credits</button>
-            <button className="dark-btn">Carbon projects</button>
+            {/* <button className="orange-btn">Carbon credits</button> */}
+            <button className="btn btn-primary">Carbon credits</button>
+            {/* <button className="dark-btn">Carbon projects</button> */}
+            <button className="btn btn-secondary">Carbon projects</button>
           </div>
         </div>
 
